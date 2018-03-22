@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100vw !important;
+    overflow-x: hidden;
+    background-color:#F3F3F3;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.w-control{
+    width:1200px;
+    height:auto;
+    margin: 0 auto;
+}

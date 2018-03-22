@@ -1,0 +1,22 @@
+{
+  "name": "poletical-gossips",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "moment": "^2.20.1",
+    "mongodb": "^3.0.1",
+    "mongoose": "^4.13.9",
+    "multer": "^1.3.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,225 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+div{
+    display: block;
+}
+@media screen and (min-width: 850px){
+    .image-holder{
+        height:400px;
+        width:100%;
+    }
+    .image-holder img{
+        width: 750px;
+        height: 400px;
+        cursor: pointer;
+    }
+.post-block__header {
+    flex-basis: 30%;
+   
+}
+.post-block__title {
+    margin-bottom: 10px;
+}
+.post-block__meta {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.post-block--funding .post-block__content, .post-block--image .post-block__content, .post-block--sponsored--has-image .post-block__content{
+    -ms-flex-preferred-size: 32%;
+    flex-basis: 32%;
+}
+.post-block--funding .post-block__footer, .post-block--image .post-block__footer, .post-block--sponsored--has-image .post-block__footer{
+    flex-basis: 31%;
+}
+
+.post-block__content {
+    font-size: .875rem;
+    
+    flex-shrink: 0;
+    display: block;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.43;
+    color: #777;
+}
+.post-block__content p {
+    margin: 0;
+}
+picture>img{
+    height:200px;
+    width: 90%;
+}
+}
+@media screen and (max-width:768px){
+    .image-holder{
+        height:130px;
+        
+
+    }
+    .image-holder img{
+        width: 300px;
+        height: 130px;
+        cursor: pointer;
+    }
+}
+#prev{
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+    color: #fff;
+}
+#next{
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+    border: none;
+}
+#sidebox{
+    height: 400px;
+    padding: 10px;
+    padding-top:0;
+    background: #f8f9fa;
+     overflow-y:auto;
+     overflow-x: hidden;
+}   
+hr{
+    background: rgb(114, 0, 114);
+    height: 3px;
+    width: 40px;
+    margin-left:0;
+    margin-right: 0;
+    margin-bottom: 5px; 
+
+}
+.river {
+    position: relative;
+    min-height: 200px;
+}
+.post-block.river-enter-active {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.post-block {
+
+    background: rgb(241, 241, 241);
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 1em;
+    margin-bottom: 1.425em;
+    padding-top: 1.425em;
+    padding-left: 1.425em;
+    border-top: 2px solid #f1f1f1;
+    clear: both;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-transition: all .2s ease .1s;
+    transition: all .2s ease .1s;
+    opacity: 1;
+    cursor: pointer;
+}
+.post-block:hover{
+    opacity: 0.7;
+
+}
+.post-block__title {
+    font-size: 1.375rem;
+    margin-top: 0;
+    margin-bottom: .25em;
+    font-family: 'aktiv-grotesk',sans-serif;
+    font-weight: 800;
+    line-height: 1.09;
+    letter-spacing: -.7px;
+    color: #000;
+}
+.post-block__title__link {
+    color: inherit;
+}
+.river-byline {
+    font-size: .8125rem;
+    font-family: aktiv-grotesk,sans-serif;
+    line-height: 1.54;
+}
+.river-byline__time {
+    display: inline-block;
+    margin-right: .8em;
+    color: #777;
+}
+.river-byline__authors {
+    font-weight: 700;
+    line-height: 1.23;
+    color: #333;
+}
+.river-byline__authors a {
+    color: inherit;
+}
+/* sidebox */
+.pb-20 {
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.pt-20 {
+    padding-top: 5px;
+}
+.o-hit {
+    cursor: pointer;
+    display: block;
+}
+.o-subtle_divider:hover{
+    opacity: 0.7;
+}
+.o-hit, .o-hit a {
+    position: relative;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+.o-rating_thumb {
+    position: relative;
+}
+.h-121 {
+    height: 160px;
+
+}
+.h-121 img{
+    width: 100%;
+    height: 150px;
+}
+.th-base .th-title {
+    color: #2b2d32;
+}
+.t-h6:after, .t-h6:before {
+    content: '';
+    display: block;
+}
+.t-h6 {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Guardian TextEgyp',serif!important;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.mt-15{
+    margin-top: 15px;
+}

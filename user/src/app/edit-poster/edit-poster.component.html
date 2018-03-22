@@ -1,0 +1,14 @@
+<button routerLink="/poster-control">Control Articals</button>
+<div>
+    <input type="text" placeholder="Artical Title" [(ngModel)]="title" id="title">
+    <input type="text" placeholder="Artical Description" [(ngModel)]="description" id="description">
+    <input type="file" placeholder="Artical Image" id="image">
+    <div id="image-hold">
+        <img src="http://localhost:3000{{image}}" alt="">
+    </div>
+</div>
+<div id="toolbar"></div>
+<div id="editor"></div>
+<button id="save_delta">SAVE</button>
+<div id="quill-dis">
+</div>

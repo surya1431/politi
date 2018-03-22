@@ -1,0 +1,16 @@
+<div>
+  <ul>
+    <li *ngFor="let x of articals">
+      <div>
+        <h3>{{x.title}}</h3>
+        <p>{{x.description}}</p>
+        <button *ngIf="x.main === false" (click)="add_to_main(x,$event)" id="a-main" class="main">Add To Main</button>
+        <button *ngIf="x.main === true" (click)="add_to_main(x,$event)" id="r-main" class="main">Added To Main</button>
+        <button *ngIf="x.side === false" (click)="add_to_side(x,$event)" id="a-side" class="side">Add To Trending</button>
+        <button *ngIf="x.side === true" (click)="add_to_side(x,$event)" id="r-side" class="side">Added To Trending</button>
+        <button routerLink="/edit-poster/{{x._id}}">Edit Poster</button>       
+        <button (click)="delete_poster(x)">Delete Poster</button>       
+      </div>
+    </li>
+  </ul>
+</div>

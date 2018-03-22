@@ -1,0 +1,118 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+   
+  }
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  .wrappe{
+      position: relative;
+
+  }
+  
+  .login-form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    border-radius: 5px;
+    width: 45%;
+    min-width: 300px;
+    }
+  
+    
+    .login-form:before, .login-form:after{
+      z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width:300px;
+      background: #777;
+      box-shadow: 0 15px 10px #777;
+      transform: rotate(-3deg);
+    }
+    .login-form:after{
+      transform: rotate(3deg);
+      right: 10px;
+      left: auto;
+    }
+  
+    .header{
+      display: block;
+      width: 100%;
+      padding: 20px;
+      color: white;
+      background: #00cc99;
+      box-shadow: inset 0px 0px 61px -20px rgba(0,0,0,0.48);
+    }
+    
+    form{
+      padding: 30px;
+      background: #f2f2f2;
+    }
+    
+    .input-wrap{
+      position: relative;}
+      
+      .input-wrap svg{
+        width: 10%;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        z-index: +1;
+        fill: #b3b3b3;
+      }
+    
+    
+    input[type=text], input[type=password]{
+      margin-bottom: 15px;
+      font-size:14px;
+      padding: 15px;
+      padding-right: 50px;
+      width: 100%;
+      border-radius: 5px;
+      background: none;
+      box-shadow: none;
+      border: none;
+      box-shadow: inset 0px 0px 61px -20px rgba(0,0,0,0.18);
+        display: block;
+    }
+   
+    input[type=submit]{
+      appearance: none;
+      background: #00cc99;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      box-shadow: none;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 15px;
+      box-shadow: inset 0px 0px 61px -20px rgba(0,0,0,0.18);
+      cursor: pointer;}
+      
+      input[type=submit]:hover{
+        background: black;
+      }
+    
+    
+    a{
+      float: right;
+      padding: 12px;
+      text-decoration: none;
+      color: #b3b3b3;
+      font-size: 14px;}
+      address:hover{
+        color: black;
+      }
+    
+  
+  
