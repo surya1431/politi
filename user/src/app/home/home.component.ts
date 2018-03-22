@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
         if(element.side !== true && element.main !== true){
           this.remaining_items.push(element);
         }
-        console.log(this.remaining_items);
+        console.log(this.items);
         // let str = ""
         // Console.log()
       });

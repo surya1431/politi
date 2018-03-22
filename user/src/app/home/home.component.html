@@ -1,85 +1,6 @@
-<!-- <!-- <div class="header">
-
-</div>
-<br>
-<div class="main-container">
-  <div class="w-control">
-    <div class="top-bottom-container">
-        <div class="top-container">
-          <div class="slider-content">
-            <div
-              ng2-carouselamos
-              class="slides-wrapper"
-              [items]="items"
-              [width]="750"
-              [$prev]="prev"
-              [$next]="next"
-              [$item]="item"
-            >
-            </div>
-              <ng-template #prev>
-                <img id="prev" src="assets/prev.png" />
-              </ng-template>
-              <ng-template #next>
-                <img id="next" src="assets/next.png" />
-              </ng-template>
-              <ng-template #item let-item let-i="index">
-                <div class="image-holder">
-                  <img src="http://localhost:3000/{{item.new_image}}" alt="" routerLink="/user-poster/{{item._id}}" class="slider-image">
-                  <div class="img-hover" routerLink="/user-poster/{{item._id}}">
-                    <div class="hover-title">
-                      <h3>{{item.title}}</h3>
-                    </div>
-                    <div class="hover-desc">
-                      <p>{{item.description}}</p>
-                    </div>
-                  </div>
-                </div>
-              </ng-template>
-          </div>
-          <div class="trending-content">
-            <div class="trending-overflow" id="style-3">
-              <div *ngFor="let x of side_banner">
-                  <div class="trend" routerLink="/user-poster/{{x._id}}">
-                    <div class="trend-img">
-                      <img src="http://localhost:3000{{x.new_image}}" alt="">
-                    </div>
-                    <div class="trend-content">
-                      <div class="trend-title">
-                        <h5>{{x.title.substr(0,30)}}...</h5>
-                      </div>
-                      <div class="trend-desc">
-                        <p>{{x.description.substr(0,50)}}...</p>
-                      </div>
-                    </div>
-                  </div><hr>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bottom-container">
-          <div *ngFor="let x of remaining_items">
-              <div class="bottom-content-holder">
-                <div class="bottom-img">
-                  <img src="http://localhost:3000{{x.new_image}}" alt="">
-                </div>
-                <div class="bottom-title">
-                  <h4>{{x.title.substr(0,25) | titlecase}}..</h4>
-                </div>
-                <div class="bottom-desc">
-                  <p>{{x.description.substr(0,100)}}...</p>
-                </div>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</div> -->
 <div id="app">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-
-   
       <a class="navbar-brand" href="#">Title</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -108,152 +29,7 @@
   </nav>
 </div><br>
 
-<!-- <div class="container">
-<div class="row">
-<div class="col-12 col-sm-8">
-    <div
-    ng2-carouselamos
-    class="slides-wrapper"
-    [items]="items"
-    [width]="750"
-    [$prev]="prev"
-    [$next]="next"
-    [$item]="item"
-  >
-  </div>
-    <ng-template #prev>
-      <img id="prev" src="assets/prev.png" />
-    </ng-template>
-    <ng-template #next>
-      <img id="next" src="assets/next.png" />
-    </ng-template>
-    <ng-template #item let-item let-i="index">
-      <div class="image-holder">
-        <img src="http://localhost:3000/{{item.new_image}}" alt="" routerLink="/user-poster/{{item._id}}" class="slider-image">
-        <div class="img-hover" routerLink="/user-poster/{{item._id}}">
-          <div class="hover-title">
-            <h3 class="text-center">{{item.title}}</h3>
-          </div>
-          <div class="hover-desc">
-            <p class="text-center">{{item.description}}</p>
-          </div>
-        </div>
-      </div>
-      </ng-template>
-   
-</div>-->
-  
-<!-- <div class="col-12 col-sm-4" id="sidebox">
-<div id="info" *ngFor="let x of side_banner">
-<div class="row" routerLink="/user-poster/{{x._id}}" >
-  <div class="col-6 col-sm-6 trend-img">
-    <img src="http://localhost:3000{{x.new_image}}"alt="" class="img-fluid">
-  </div>
-  <div class=" col-6 col-sm-6 trend-text">
-    <p>{{x.title.substr(0,30)}}...</p>
-  </div>
-
-</div>
-</div>
-</div> -->
-<!--<div class="col-sm-3">
-
-
-<article class="o-subtle_divider pb-20 pt-20" >
-  <div class="o-hit">
-    <div class="o-rating_thumb mb-15">
-      <div class="h-121">
-        <img src="https://o.aolcdn.com/images/dims?thumbnail=215%2C121&amp;quality=80&amp;image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2Fe6f4ee88cd3117c6526c4c18a178c395%2F206232309%2Fzuck-ed.jpg&amp;client=cbc79c14efcebee57402&amp;signature=dc40cc71d2efe0f3271788de90f019c9a6efda82" alt="Mark Zuckerberg will address the Cambridge Analytica scandal soon" class="max-img">
-      </div>
-    </div>
-    
-    <h3 class="t-h6 th-title">
-        <span class="th-underline">
-          Mark Zuckerberg will address the Cambridge Analytica scandal soon
-        </span>
-    </h3>
-  <div class="t-meta th-meta mt-15">
-      1h ago
-  </div>
-
-</div>
-<hr>
-
-</article>
-</div>
-
-</div>
-</div>
-
-<br> -->
-<!-- <div class="container">
-
-
-<div class="row" id="card">
-<div class="col-12 col-sm-3" *ngFor="let x of remaining_items">
-  <div class="card">
-      <img class="" src="http://localhost:3000{{x.new_image}}" alt="Card image cap" class="img-fluid">
-      <div class="card-body">
-        <h6 class="card-title"><b>{{x.title.substr(0,25) | titlecase}}</b></h6>
-      </div>
-      <div class="sharing">
-          <small> 20 March, 9:45</small>
-          
-          <div class="btn-group" style="float:right;">
-            <a href="" class="btn"><i class="fa fa-facebook"></i></a>
-                  <a href="" class="btn"><i class="fa fa-twitter"></i></a>
-                  <a href="" class="btn"><i class="fa fa-google"></i></a>
-
-          </div>
-      </div>
-    </div>
-</div>
-
-</div>
-</div>
-<br><br>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
-  -->
-  <!-- <div class="container">
-    <div class="river river--homepage">
-      <div>
-        <article class="post-block post-block--image post-block--unread river-enter-active">
-          <header class="post-block__header">
-            <h2 class="post-block__title">
-              <a class="post-block__title__link" href="/2018/03/21/layoffs-at-bike-share-startup-zagster-following-15-million-raise/">Layoffs at bike-share startup Zagster following $15 million raise
-              </a>
-            </h2>
-            <div class="post-block__meta">
-              <div class="river-byline">
-                <time class="river-byline__time" datetime="2018-03-21T16:34:09.000Z">7 minutes ago</time>
-                <span class="river-byline__authors">
-                  <span>
-                    <a aria-label="Posts by Megan Rose Dickey" href="/author/mdickey/">Megan Rose Dickey</a>
-                  </span>
-                </span>
-              </div>
-            </div>
-          </header>
-          <div class="post-block__content">
-            <p>
-               the bike-sharefe,f, startup that raised a $15 million round last month, has laid off some employees, TechCrunch has learned. Zagster has since confirmed the layoffs, but has yet to comment on t...
-            </p>
-          </div>
-          <footer class="post-block__footer">
-            <figure class="post-block__media">
-              <picture>
-                <source srcset="https://techcrunch.com/wp-content/uploads/2018/02/pace-at-public-rack.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2018/02/pace-at-public-rack.jpg?w=400&amp;h=400&amp;crop=1 2x" media="https://techcrunch.com/wp-content/uploads/2018/02/pace-at-public-rack.jpg">
-                  <img alt="" src="https://techcrunch.com/wp-content/uploads/2018/02/pace-at-public-rack.jpg?w=300&amp;h=160&amp;crop=1">
-                </picture>
-              </figure>
-            </footer>
-          </article>
-      </div>
-    </div> -->
-
-
-    <div class="container first">
+<div class="container first">
       <div class="row">
       <div class="col-12 col-sm-9">
           <div
@@ -267,23 +43,24 @@
         >
         </div>
           <ng-template #prev>
-            <img id="prev" src="assets/prev.png" />
+           <span><i class="fa fa-angle-left"></i></span>
           </ng-template>
           <ng-template #next>
-            <img id="next" src="assets/next.png" />
+            <span><i class="fa fa-angle-right"></i></span>
           </ng-template>
           <ng-template #item let-item let-i="index">
             <div class="image-holder">
-              <img src="http://localhost:3000/{{item.new_image}}" alt=""  class="slider-image">
-              <div class="img-hover">
-                <div class="hover-title">
-                  <h3 class="text-center">{{item.title}}</h3>
-                </div>
-                <div class="hover-desc">
-                  <p class="text-center">{{item.description}}</p>
-                </div>
+              <img src="http://localhost:3000{{item.new_image}}" routerLink="/user-poster/{{item._id}}"alt=""  class="slider-image">
+            <div class="img-hover"
+            routerLink="/user-poster/{{item._id}}">
+              <div class="hover-title">
+                <h3 class="text-center">{{item.title}}</h3>
+              </div>
+              <div class="hover-desc">
+                <p class="text-center">{{item.description}}</p>
               </div>
             </div>
+          </div>
             </ng-template>
          
       </div>
@@ -296,14 +73,14 @@
         <div class="o-hit">
           <div class="o-rating_thumb mb-15">
             <div class="h-121">
-              <img src="http://localhost:3000{{x.new_image}}" class="max-img">
+  <img src="http://localhost:3000{{x.new_image}}" class="max-img">
             </div>
           </div>
         </div>
           
           <h3 class="t-h6 th-title">
               <span class="th-underline">
-                  {{x.title.substr(0,30)}}
+                  {{x.title.substr(0,20)}}
               </span>
           </h3>
         <div class="t-meta th-meta mt-15">
@@ -318,8 +95,10 @@
   </div>
       </div>
       </div><br>
+
         
   <div class="container">
+      
       <hr>
       <h4>Latest News</h4>
   
@@ -351,38 +130,9 @@
         <footer class="post-block__footer">
           <figure class="post-block__media">
             <picture>
-              
-                <img alt="" src="http://localhost:3000{{x.new_image}}">
+<img alt=""
+ src="http://localhost:3000{{x.new_image}}">
               </picture>
-            </figure>
-          </footer>
-        </article>
-        <article class="post-block post-block--image post-block--unread river-enter-active">
-          <header class="post-block__header">
-            <h2 class="post-block__title">
-              <a class="post-block__title__link" href="/2018/03/21/clari-ai-sales/">Clari raises $35M for its AI-based sales platform, expands into marketing and supply chain management</a>
-            </h2>
-            <div class="post-block__meta">
-              <div class="river-byline">
-                <time class="river-byline__time" datetime="2018-03-21T16:17:20.000Z">24 minutes ago
-  
-                </time>
-                <span class="river-byline__authors"><span>
-                  <a aria-label="Posts by Ingrid Lunden" href="/author/ingridlunden/">Ingrid Lunden</a>
-                </span>
-              </span>
-            </div>
-          </div>
-        </header>
-        <div class="post-block__content">
-          <p>Clari&nbsp;— a startup that has built a predictive sales tool that provides just-in-time assistance for sales people close deals and for those who work in the bigger chain of command to monitor th...
-  
-          </p>
-        </div>
-        <footer class="post-block__footer">
-          <figure class="post-block__media">
-            <picture>
-              <img alt="" src="https://techcrunch.com/wp-content/uploads/2017/10/gettyimages-755650685.jpg?w=300&amp;h=160&amp;crop=1"></picture>
             </figure>
           </footer>
         </article>

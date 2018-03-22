@@ -12,7 +12,8 @@ export class UserPosterComponent implements OnInit {
   constructor(private activated:ActivatedRoute, private router:Router , private adminAuth:AdminAuthService) { }
 
   id:string;
-
+  title:string;
+  image:string;
   ngOnInit() {
 
     // quill initialized
@@ -20,9 +21,15 @@ export class UserPosterComponent implements OnInit {
 
       this.id = this.router.url.replace('/user-poster/','');
       this.adminAuth.get_poster(this.id).subscribe(data => {
-        let content = JSON.parse(data.msg.content);
-        quill.setContents(content);
-        quill.enable(false);
+        console.log(data);
+        if(data.success === true){
+          let c = data.msg;
+          this.title = c.title;
+          this.image = c.image.replace('public','');
+          let content = JSON.parse(c.content);
+          quill.setContents(content);
+          quill.enable(false);
+        }
       });
   }
 
