@@ -1,4 +1,4 @@
-<button routerLink="/poster-control">Control Articals</button>
+<!-- <button routerLink="/poster-control">Control Articals</button>
 <div>
     <input type="text" placeholder="Artical Title" [(ngModel)]="title" id="title">
     <input type="text" placeholder="Artical Description" [(ngModel)]="description" id="description">
@@ -11,4 +11,33 @@
 <div id="editor"></div>
 <button id="save_delta">SAVE</button>
 <div id="quill-dis">
-</div>
+</div> -->
+<h2 class="text-center">Edit an Article</h2>
+<div class="container">
+    <div class="posting">
+        <div class="form-group">
+            <input type="text" name="" [(ngModel)]="title" id="title" placeholder="Title" class="form-control">
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <textarea name="" id="" cols="50" rows="5"[(ngModel)]="description" id="description"  class="form-control"placeholder="Description For Front"></textarea>
+
+            </div>
+            <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                            <input type="file" name="" placeholder="Article_image" id="image">
+                        </div>
+    
+                </div>
+
+        </div><br>
+        
+                <div id="toolbar"></div>
+                <div id="editor"></div>
+                <div id="quill-dis"></div>
+                
+                
+        </div>
+    
+<button type="button" class="btn btn-success btn-block" id="save_delta">Save</button><br>
+    </div>

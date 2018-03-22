@@ -1,0 +1,8 @@
+#editor{
+    height: 200px;
+}
+@media screen and (max-width: 756px){
+ .container{
+     padding-left: 10px;
+ }
+}

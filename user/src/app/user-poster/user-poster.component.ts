@@ -14,6 +14,7 @@ export class UserPosterComponent implements OnInit {
   id:string;
   title:string;
   image:string;
+  postedOn:any;
   ngOnInit() {
 
     // quill initialized
@@ -26,6 +27,7 @@ export class UserPosterComponent implements OnInit {
           let c = data.msg;
           this.title = c.title;
           this.image = c.image.replace('public','');
+          this.postedOn=c.postedOn;
           let content = JSON.parse(c.content);
           quill.setContents(content);
           quill.enable(false);
